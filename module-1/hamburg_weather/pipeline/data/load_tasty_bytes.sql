@@ -1,5 +1,5 @@
 USE ROLE accountadmin;
-
+-- 20th August 2025 change
 
 /*--
 database, schema and warehouse creation
@@ -296,6 +296,7 @@ USE WAREHOUSE demo_build_wh;
 -- country table load
 COPY INTO {{env}}_tasty_bytes.raw_pos.country
 FROM @{{env}}_tasty_bytes.public.s3load/raw_pos/country/;
+-- 20th August 2025 change
 -- (
 --    country_id,
 --    country,
